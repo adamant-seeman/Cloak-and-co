@@ -1,0 +1,525 @@
+/* ==========================================================================
+   Cloäk & Co. | Collections Page Styles (collections.css)
+   Warm Beige & Lavender Luxury Palette
+   ========================================================================== */
+
+/* --- Page Background Override --- */
+body {
+  background-color: #F7F1E8 !important;
+  color: #4E4458 !important;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* --- Warm Translucent Beige Navbar --- */
+.glass-navbar {
+  background: rgba(247, 241, 232, 0.72) !important;
+  border-color: rgba(139, 120, 168, 0.22) !important;
+  box-shadow: 0 10px 30px rgba(78, 68, 88, 0.08), 
+              0 0 1px rgba(255, 255, 255, 0.8) inset !important;
+}
+
+.glass-navbar .nav-logo {
+  color: #4E4458 !important;
+  font-weight: 600;
+}
+
+.glass-navbar .nav-link {
+  color: #7D7188 !important;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.glass-navbar .nav-link:hover {
+  color: #8B78A8 !important;
+}
+
+.glass-navbar .nav-link.active {
+  color: #8B78A8 !important;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(139, 120, 168, 0.8) !important;
+  padding-bottom: 2px;
+}
+
+/* Shop Cases Button inside Navbar */
+.glass-navbar .nav-cta-btn {
+  background: #FFF8EF !important;
+  color: #8B78A8 !important;
+  border: 1px solid rgba(139, 120, 168, 0.3) !important;
+  box-shadow: 0 4px 10px rgba(139, 120, 168, 0.08) !important;
+  font-weight: 500;
+}
+
+.glass-navbar .nav-cta-btn:hover {
+  background: #8B78A8 !important;
+  color: #FAF8F5 !important;
+  box-shadow: 0 6px 15px rgba(139, 120, 168, 0.25) !important;
+}
+
+/* Mobile Menu Overrides */
+.glass-navbar .mobile-menu-toggle span {
+  background-color: #4E4458 !important;
+}
+
+.glass-navbar .mobile-nav-menu {
+  background: rgba(247, 241, 232, 0.96) !important;
+  border-top: 1px solid rgba(139, 120, 168, 0.15) !important;
+  box-shadow: 0 10px 30px rgba(78, 68, 88, 0.1) !important;
+}
+
+.glass-navbar .mobile-nav-link {
+  color: #7D7188 !important;
+  border-bottom-color: rgba(139, 120, 168, 0.1) !important;
+}
+
+.glass-navbar .mobile-nav-link:hover,
+.glass-navbar .mobile-nav-link.active {
+  color: #8B78A8 !important;
+}
+
+.glass-navbar .mobile-nav-cta {
+  background: #8B78A8 !important;
+  color: #FAF8F5 !important;
+}
+
+/* --- Ambient Glowing Background Blobs --- */
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  -webkit-filter: blur(120px);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+}
+
+.blob-1 {
+  width: 45vw;
+  height: 45vw;
+  background: radial-gradient(circle, rgba(139, 120, 168, 0.22) 0%, transparent 70%);
+  top: -10vw;
+  right: -5vw;
+  animation: float-blob-1 25s infinite alternate ease-in-out;
+}
+
+.blob-2 {
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, rgba(239, 230, 218, 0.8) 0%, transparent 70%);
+  bottom: 10vw;
+  left: -10vw;
+  animation: float-blob-2 20s infinite alternate ease-in-out;
+}
+
+.blob-3 {
+  width: 35vw;
+  height: 35vw;
+  background: radial-gradient(circle, rgba(139, 120, 168, 0.12) 0%, transparent 70%);
+  top: 40%;
+  left: 35%;
+  animation: float-blob-3 30s infinite alternate ease-in-out;
+}
+
+@keyframes float-blob-1 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-8%, 5%) scale(1.05); }
+}
+
+@keyframes float-blob-2 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(6%, -8%) scale(0.95); }
+}
+
+@keyframes float-blob-3 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-5%, -5%) scale(1.1); }
+}
+
+/* --- Main Layout Wrapper --- */
+.collections-main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16vh 24px 80px 24px;
+  z-index: 2;
+  position: relative;
+}
+
+/* --- Hero Section --- */
+.collections-hero {
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.collections-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #4E4458 0%, #7D7188 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.collections-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.55;
+  color: #7D7188 !important;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Floating Sparkle SVGs */
+.sparkle path {
+  fill: #8B78A8 !important;
+}
+
+.sparkle {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+  animation: heartbeat 4s infinite ease-in-out;
+}
+
+.sparkle-1 {
+  top: -10px;
+  left: 20%;
+  animation-delay: 0.5s;
+}
+
+.sparkle-2 {
+  bottom: 0px;
+  right: 18%;
+  animation-delay: 2s;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.5; }
+  50% { transform: scale(1.25) rotate(15deg); opacity: 0.95; }
+}
+
+/* --- Responsive Product Grid --- */
+.collections-container {
+  margin-bottom: 80px;
+  min-height: 300px;
+  position: relative;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: gridFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes gridFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Product Card (Reusable Component Styling) --- */
+.product-card {
+  background: rgba(255, 248, 238, 0.72) !important;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(139, 120, 168, 0.22) !important;
+  border-radius: 24px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(78, 68, 88, 0.04),
+              0 0 1px rgba(255, 255, 255, 0.8) inset !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  background: #FFF8EF;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(139, 120, 168, 0.08);
+}
+
+.card-img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #4E4458 !important;
+  margin-bottom: 6px;
+  letter-spacing: 0.01em;
+}
+
+.card-text {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.86rem;
+  color: #7D7188 !important;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.view-design-btn {
+  display: block;
+  width: 100%;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-align: center;
+  color: #8B78A8 !important; /* Lavender Accent text */
+  background: #FFF8EF !important; /* Cream button background */
+  border: 1px solid rgba(139, 120, 168, 0.25) !important;
+  padding: 12px;
+  border-radius: 20px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 10px rgba(78, 68, 88, 0.02);
+  cursor: pointer;
+}
+
+/* --- Card Interactive Hover Effects --- */
+.product-card:hover {
+  transform: translateY(-8px) scale(1.015);
+  border-color: rgba(139, 120, 168, 0.45) !important;
+  box-shadow: 0 20px 40px rgba(139, 120, 168, 0.15),
+              0 0 1px rgba(255, 255, 255, 0.9) inset !important;
+}
+
+.product-card:hover .card-img-wrapper img {
+  transform: scale(1.06); /* Subtle zoom */
+}
+
+.product-card:hover .view-design-btn {
+  background: #8B78A8 !important;
+  color: #FAF8F5 !important;
+  border-color: #8B78A8 !important;
+  box-shadow: 0 6px 15px rgba(139, 120, 168, 0.25);
+}
+
+/* --- Empty state Styling --- */
+.empty-state {
+  display: none; /* Procedurally toggled in JS if loading fails */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 24px;
+  background: rgba(255, 248, 238, 0.5);
+  border: 1px solid rgba(139, 120, 168, 0.15);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(78, 68, 88, 0.02);
+  max-width: 600px;
+  margin: 0 auto;
+  animation: gridFadeUp 1s ease forwards;
+}
+
+.empty-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(139, 120, 168, 0.06);
+  border: 1px solid rgba(139, 120, 168, 0.18);
+  color: #8B78A8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.empty-icon-wrapper svg {
+  width: 28px;
+  height: 28px;
+}
+
+.empty-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #4E4458;
+  margin-bottom: 10px;
+}
+
+.empty-message {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  color: #7D7188;
+  font-weight: 300;
+  max-width: 320px;
+  line-height: 1.5;
+}
+
+/* --- Final CTA Section --- */
+.collections-cta {
+  background: radial-gradient(circle at center, rgba(139, 120, 168, 0.08) 0%, transparent 70%);
+  padding: 80px 24px;
+  text-align: center;
+  margin-bottom: 60px;
+  border-radius: 24px;
+}
+
+.cta-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #4E4458 !important;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+
+.cta-btn {
+  display: inline-block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #8B78A8 !important;
+  background: #FFF8EF !important;
+  border: 1px solid rgba(139, 120, 168, 0.3) !important;
+  padding: 16px 36px;
+  border-radius: 30px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 6px 15px rgba(78, 68, 88, 0.04);
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  background: #8B78A8 !important;
+  color: #FAF8F5 !important;
+  box-shadow: 0 10px 25px rgba(139, 120, 168, 0.25) !important;
+}
+
+/* --- Responsive Layout Adjustments --- */
+@media (max-width: 1024px) {
+  .collections-main {
+    padding-top: 14vh;
+  }
+  .collections-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .collections-main {
+    padding-top: 12vh;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .collections-title {
+    font-size: 2.8rem;
+    margin-bottom: 12px;
+  }
+  .collections-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.45;
+  }
+  
+  .collections-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .product-card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+  
+  .cta-heading {
+    font-size: 2.2rem;
+  }
+  .cta-btn {
+    padding: 14px 30px;
+    font-size: 0.9rem;
+  }
+}
+
+/* --- Warm Beige Footer Override --- */
+.collections-footer {
+  background: #EFE6DA !important;
+  border-top: 1px solid rgba(139, 120, 168, 0.15) !important;
+  padding: 40px 24px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #4E4458 !important;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.footer-tagline {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  color: #7D7188 !important;
+  font-weight: 300;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-link {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.86rem;
+  color: #7D7188 !important;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #8B78A8 !important;
+}
+
+.footer-link.active {
+  color: #8B78A8 !important;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(139, 120, 168, 0.8) !important;
+  padding-bottom: 2px;
+}
+
+@media (max-width: 768px) {
+  .collections-footer {
+    padding: 30px 16px;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer-links {
+    gap: 16px;
+  }
+}
