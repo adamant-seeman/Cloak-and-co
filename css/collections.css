@@ -4,7 +4,7 @@
    ========================================================================== */
 
 /* --- Page Background Override --- */
-body {
+/* body {
   background-color: #F7F1E8 !important;
   color: #4E4458 !important;
   overflow-x: hidden;
@@ -12,7 +12,7 @@ body {
 }
 
 /* --- Warm Translucent Beige Navbar --- */
-.glass-navbar {
+/* .glass-navbar {
   background: rgba(247, 241, 232, 0.72) !important;
   border-color: rgba(139, 120, 168, 0.22) !important;
   box-shadow: 0 10px 30px rgba(78, 68, 88, 0.08), 
@@ -39,10 +39,10 @@ body {
   font-weight: 500;
   border-bottom: 2px solid rgba(139, 120, 168, 0.8) !important;
   padding-bottom: 2px;
-}
+} */ 
 
 /* Shop Cases Button inside Navbar */
-.glass-navbar .nav-cta-btn {
+/* .glass-navbar .nav-cta-btn {
   background: #FFF8EF !important;
   color: #8B78A8 !important;
   border: 1px solid rgba(139, 120, 168, 0.3) !important;
@@ -54,10 +54,10 @@ body {
   background: #8B78A8 !important;
   color: #FAF8F5 !important;
   box-shadow: 0 6px 15px rgba(139, 120, 168, 0.25) !important;
-}
+} */
 
 /* Mobile Menu Overrides */
-.glass-navbar .mobile-menu-toggle span {
+/* .glass-navbar .mobile-menu-toggle span {
   background-color: #4E4458 !important;
 }
 
@@ -80,7 +80,7 @@ body {
 .glass-navbar .mobile-nav-cta {
   background: #8B78A8 !important;
   color: #FAF8F5 !important;
-}
+} */
 
 /* --- Ambient Glowing Background Blobs --- */
 .blob {

@@ -14,7 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/navbar.css">
 </head>
 <body>
 
@@ -29,34 +30,8 @@
     </div>
   </div>
 
-  <!-- Floating Glass Navbar -->
-  <nav class="glass-navbar">
-    <div class="navbar-container">
-      <a href="#" class="nav-logo" id="nav-logo">Cloäk & Co.</a>
-      <div class="nav-links">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="collections.html" class="nav-link">Collections</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-      </div>
-      <a href="#shop" class="nav-cta-btn">Shop Cases</a>
-      
-      <!-- Mobile Menu Button -->
-      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <!-- Mobile Menu Dropdown -->
-    <div class="mobile-nav-menu">
-      <a href="#home" class="mobile-nav-link">Home</a>
-      <a href="collections.html" class="mobile-nav-link">Collections</a>
-      <a href="about.html" class="mobile-nav-link">About</a>
-      <a href="contact.html" class="mobile-nav-link">Contact</a>
-      <a href="#shop" class="mobile-nav-cta">Shop Cases</a>
-    </div>
-  </nav>
+  <div id="navbar"></div>
+
 
   <!-- Sticky Canvas & Card Scroll Story Section -->
   <main class="scroll-container" id="home">
@@ -163,6 +138,7 @@
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
 
   <!-- Main JS -->
-  <script src="app.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
