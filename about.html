@@ -1,214 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cloäk & Co. | About Us</title>
-  <meta name="description" content="Discover our story, values, and design philosophy. Cloäk & Co. brings together protection, thoughtful design, and premium craftsmanship.">
-  
-  <!-- Premium Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  
-  
-  <!-- Shared index styles & About specific styles -->
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/navbar.css">
-</head>
-<body>
+  <meta name="description"
+    content="Discover our story, values, and design philosophy. Cloäk & Co. brings together protection, thoughtful design, and premium craftsmanship.">
+   
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <div id="navbar"></div>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+  
+
+    <!-- Shared styles & About specific styles -->
+    <!-- <link rel="stylesheet" href="css/global.css"> -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+
  
 
-  <!-- Ambient Glowing Background Blobs (CSS Only) -->
-  <div class="blob blob-1"></div>
-  <div class="blob blob-2"></div>
-  <div class="blob blob-3"></div>
+<body>
 
-  <!-- About Page Main Container -->
-  <main class="about-main">
-    
-    <!-- Hero Section -->
-    <section class="about-hero">
-      <!-- Sparkle SVGs for Apple-like clean decoration -->
-      <div class="sparkle sparkle-1">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z" fill="rgba(139, 120, 168, 0.4)"/>
-        </svg>
-      </div>
-      <div class="sparkle sparkle-2">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z" fill="rgba(139, 120, 168, 0.3)"/>
-        </svg>
-      </div>
+    <!-- Shared Navbar -->
+    <div id="navbar"></div>
 
-      <h1 class="about-title fade-up">About Cloäk & Co.</h1>
-      <p class="about-subtitle fade-up">We believe a phone case should do more than protect your device—it should reflect your personality, complement your style, and become part of your everyday life.</p>
-    </section>
+  
+    <main class="about-main">
 
-    <!-- Our Story Section -->
-    <section class="story-section fade-up">
-      <div class="story-split-container">
-        <!-- Left Side Editorial Header -->
-        <div class="story-left">
-          <h2 class="editorial-header">Crafting beauty, protecting connections.</h2>
-        </div>
-        <!-- Right Side Glass narrative Card -->
-        <div class="story-right">
-          <div class="story-glass-card">
-            <p class="story-paragraph">Cloäk & Co. was created with a simple vision—to bring together protection, thoughtful design, and premium craftsmanship.</p>
-            <p class="story-paragraph">Every collection is inspired by modern aesthetics, delicate details, and timeless elegance. We design products that feel as beautiful as they are functional, allowing your phone to become an extension of your personal style.</p>
-            <p class="story-paragraph">Instead of following trends, we focus on creating designs you'll love every day.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- ===================================================== -->
+        <!-- HERO -->
+        <!-- ===================================================== -->
 
-    <!-- Our Philosophy Section -->
-    <section class="philosophy-section">
-      <div class="philosophy-grid">
-        <!-- Card 1 -->
-        <div class="philosophy-card fade-up">
-          <div class="philosophy-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
-              <path d="M12 16L16 12L12 8"/>
-              <path d="M8 12H16"/>
-            </svg>
-          </div>
-          <h3 class="philosophy-card-title">Elegant Design</h3>
-          <p class="philosophy-card-text">Minimal, timeless designs inspired by art, nature, and modern living.</p>
-        </div>
-        <!-- Card 2 -->
-        <div class="philosophy-card fade-up">
-          <div class="philosophy-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z"/>
-            </svg>
-          </div>
-          <h3 class="philosophy-card-title">Premium Protection</h3>
-          <p class="philosophy-card-text">Durable materials engineered to protect your phone without compromising beauty.</p>
-        </div>
-        <!-- Card 3 -->
-        <div class="philosophy-card fade-up">
-          <div class="philosophy-icon-wrapper">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
-              <path d="M2 17L12 22L22 17"/>
-              <path d="M2 12L12 17L22 12"/>
-            </svg>
-          </div>
-          <h3 class="philosophy-card-title">Attention to Detail</h3>
-          <p class="philosophy-card-text">Every texture, finish, and print is carefully crafted to deliver a luxury experience.</p>
-        </div>
-      </div>
-    </section>
+        <section class="about-hero fade-up">
 
-    <!-- Why Choose Cloäk Section -->
-    <section class="why-cloak-section fade-up">
-      <h2 class="section-headline">Why Choose Cloäk</h2>
-      <div class="features-grid">
-        <!-- Feature 1 -->
-        <div class="feature-tile">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-          </div>
-          <span class="feature-label">Premium Materials</span>
-        </div>
-        <!-- Feature 2 -->
-        <div class="feature-tile">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-          </div>
-          <span class="feature-label">Precision Fit</span>
-        </div>
-        <!-- Feature 3 -->
-        <div class="feature-tile">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-          </div>
-          <span class="feature-label">High-Quality Printing</span>
-        </div>
-        <!-- Feature 4 -->
-        <div class="feature-tile">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-          </div>
-          <span class="feature-label">Slim & Lightweight</span>
-        </div>
-        <!-- Feature 5 -->
-        <div class="feature-tile">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-          </div>
-          <span class="feature-label">Comfortable Grip</span>
-        </div>
-        <!-- Feature 6 -->
-        <div class="feature-tile">
-          <div class="feature-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <polyline points="20 6 9 17 4 12"/>
-            </svg>
-          </div>
-          <span class="feature-label">Designed to Last</span>
-        </div>
-      </div>
-    </section>
+            <span class="hero-tag">
+                Luxury. Protection. Identity.
+            </span>
 
-    <!-- Our Promise Section -->
-    <section class="promise-section fade-up">
-      <div class="promise-container">
-        <h2 class="promise-heading">Designed to Protect What Matters.</h2>
-        <p class="promise-paragraph">From everyday moments to life's biggest memories, our goal is to create products that protect your device while expressing your individuality. Every case is made with quality, care, and attention to detail.</p>
-      </div>
-    </section>
+            <h1 class="about-title">
+                We design phone cases<br>
+                you'll actually love carrying.
+            </h1>
 
-    <!-- Call to Action Section -->
-    <section class="about-cta fade-up">
-      <div class="cta-inner-card">
-        <!-- Floating Sparkle decoration inside CTA -->
-        <div class="form-decor-shape form-decor-shape-1"></div>
-        <h2 class="cta-card-heading">Find Your Perfect Case</h2>
-        <p class="cta-card-text">Discover collections designed to combine beauty, durability, and everyday functionality.</p>
-        <div class="cta-buttons-group">
-          <a href="collections.html" class="cta-btn-primary">Explore Collections</a>
-          <a href="contact.html" class="cta-btn-secondary">Contact Us</a>
-        </div>
-      </div>
-    </section>
+            <p class="about-subtitle">
 
-  </main>
+                At Cloäk & Co., we believe protection should never compromise
+                elegance. Every collection is created to feel timeless,
+                premium and effortlessly beautiful.
 
-  <!-- Footer -->
-  <footer class="about-footer">
-    <div class="footer-container">
-      <div class="footer-brand">
-        <h2 class="footer-logo">Cloäk & Co.</h2>
-        <p class="footer-tagline">Protect What Matters.</p>
-      </div>
-      <div class="footer-links">
-        <a href="index.html#home" class="footer-link">Home</a>
-        <a href="collections.html" class="footer-link">Collections</a>
-        <a href="about.html" class="footer-link active">About</a>
-        <a href="contact.html" class="footer-link">Contact</a>
-      </div>
-    </div>
-  </footer>
+            </p>
 
-  <!-- About page script overrides -->
-   <script src = "js/navbar.js"></script>
-   <script src = "js/about.js"></script>
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- STORY -->
+        <!-- ===================================================== -->
+
+        <section class="story-section fade-up">
+
+            <div class="story-left">
+
+                <span class="section-tag">
+                    OUR STORY
+                </span>
+
+                <h2>
+                    Protection can be beautiful.
+                </h2>
+
+            </div>
+
+            <div class="story-right">
+
+                <p>
+
+                    Cloäk & Co. began with one simple observation—
+                    most phone cases either looked beautiful or protected your
+                    phone well.
+
+                </p>
+
+                <p>
+
+                    We wanted both.
+
+                </p>
+
+                <p>
+
+                    Every design starts with timeless aesthetics before being
+                    engineered with premium materials that survive everyday
+                    life.
+
+                </p>
+
+                <p>
+
+                    Instead of chasing trends, we create collections that still
+                    look elegant years later.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- VALUES -->
+        <!-- ===================================================== -->
+
+        <section class="values-section fade-up">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    WHAT WE BELIEVE
+                </span>
+
+                <h2>
+                    Everything we build follows three simple principles.
+                </h2>
+
+            </div>
+
+            <div class="values-grid">
+
+                <article class="value-card">
+
+                    <div class="value-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Timeless Design
+                    </h3>
+
+                    <p>
+
+                        Elegant colours, minimal layouts and carefully selected
+                        artwork that never goes out of style.
+
+                    </p>
+
+                </article>
+
+                <article class="value-card">
+
+                    <div class="value-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Premium Protection
+                    </h3>
+
+                    <p>
+
+                        Military-grade impact protection with raised bezels,
+                        reinforced corners and durable construction.
+
+                    </p>
+
+                </article>
+
+                <article class="value-card">
+
+                    <div class="value-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Crafted Details
+                    </h3>
+
+                    <p>
+
+                        Every texture, finish and print is refined until it
+                        feels luxurious in your hand.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- IMAGE + CONTENT -->
+        <!-- ===================================================== -->
+
+        <section class="craft-section fade-up">
+
+            <div class="craft-image">
+
+                <img
+                    src="assets/images/case1.jpg"
+                    alt="Luxury Phone Case">
+
+            </div>
+
+            <div class="craft-content">
+
+                <span class="section-tag">
+                    CRAFTSMANSHIP
+                </span>
+
+                <h2>
+                    Designed for everyday luxury.
+                </h2>
+
+                <p>
+
+                    Every Cloäk & Co. case combines aesthetics with precision
+                    engineering, allowing your phone to remain protected while
+                    feeling beautifully premium.
+
+                </p>
+
+                <ul class="craft-list">
+
+                    <li>Military Grade Drop Protection</li>
+
+                    <li>Premium Printed Artwork</li>
+
+                    <li>Scratch Resistant Finish</li>
+
+                    <li>Crystal Clear Camera Protection</li>
+
+                    <li>Comfortable Everyday Grip</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+                <!-- ===================================================== -->
+        <!-- WHY CHOOSE US -->
+        <!-- ===================================================== -->
+
+        <section class="why-section fade-up">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    WHY CLOÄK & CO.
+                </span>
+
+                <h2>
+                    Built around the details that matter.
+                </h2>
+
+            </div>
+
+            <div class="why-grid">
+
+                <div class="why-card">
+                    <div class="why-icon">✓</div>
+                    <h3>Premium Materials</h3>
+                    <p>Only carefully selected materials that feel soft, luxurious and durable.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">✓</div>
+                    <h3>Perfect Precision</h3>
+                    <p>Every button, speaker and camera cut-out is engineered for a flawless fit.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">✓</div>
+                    <h3>Minimal Aesthetics</h3>
+                    <p>Designed to elevate your phone instead of overpowering it.</p>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">✓</div>
+                    <h3>Built to Last</h3>
+                    <p>Premium coatings resist scratches, fading and everyday wear.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- STATS -->
+        <!-- ===================================================== -->
+
+        <section class="stats-section fade-up">
+
+            <div class="stat-box">
+
+                <h2>100%</h2>
+
+                <p>
+                    Premium Design
+                </p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2>360°</h2>
+
+                <p>
+                    Everyday Protection
+                </p>
+
+            </div>
+
+            <div class="stat-box">
+
+                <h2>∞</h2>
+
+                <p>
+                    Timeless Style
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- PROMISE -->
+        <!-- ===================================================== -->
+
+        <section class="promise-section fade-up">
+
+            <div class="promise-card">
+
+                <span class="section-tag">
+                    OUR PROMISE
+                </span>
+
+                <h2>
+                    Designed to protect what matters most.
+                </h2>
+
+                <p>
+
+                    Whether you're heading to work, travelling across the world,
+                    or simply enjoying everyday moments, your phone deserves
+                    protection that feels as premium as the device itself.
+
+                </p>
+
+                <p>
+
+                    Every Cloäk & Co. case is made to combine beauty,
+                    confidence and durability in one timeless product.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================================== -->
+        <!-- CTA -->
+        <!-- ===================================================== -->
+
+        <section class="about-cta fade-up">
+
+            <div class="cta-card">
+
+                <span class="section-tag">
+                    READY TO EXPLORE?
+                </span>
+
+                <h2>
+                    Find your perfect case.
+                </h2>
+
+                <p>
+
+                    Discover elegant collections crafted for everyday luxury.
+
+                </p>
+
+                <div class="cta-buttons">
+
+                    <a href="collections.html" class="cta-primary">
+                        Explore Collection
+                    </a>
+
+                    <a href="contact.html" class="cta-secondary">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <!-- Scripts -->
+
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+
+    <script src="js/about.js"></script>
+
 </body>
+
 </html>

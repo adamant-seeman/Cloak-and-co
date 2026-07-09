@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cloäk & Co. | Collections</title>
-  <meta name="description" content="Explore our premium collections of designer phone cases. Crafted with Timeless elegance and military-grade protection to protect what matters.">
-  
+  <meta name="description"
+    content="Explore our premium collections of designer phone cases. Crafted with Timeless elegance and military-grade protection to protect what matters.">
+
   <!-- Premium Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
+
   <!-- Shared index styles & Collections specific styles -->
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/collections.css">
   <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
 
   <div id="navbar"></div>
- 
+
   <!-- Ambient Glowing Background Blobs (CSS Only) -->
   <div class="blob blob-1"></div>
   <div class="blob blob-2"></div>
@@ -27,18 +37,22 @@
 
   <!-- Collections Main Container -->
   <main class="collections-main">
-    
+
     <!-- Hero Section -->
     <section class="collections-hero">
       <!-- Sparkle SVGs for Apple-like clean decoration -->
       <div class="sparkle sparkle-1">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z" fill="rgba(139, 120, 168, 0.4)"/>
+          <path
+            d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z"
+            fill="rgba(139, 120, 168, 0.4)" />
         </svg>
       </div>
       <div class="sparkle sparkle-2">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z" fill="rgba(139, 120, 168, 0.3)"/>
+          <path
+            d="M12 0C12 6.627 17.373 12 24 12C17.373 12 12 17.373 12 24C12 17.373 6.627 12 0 12C6.627 12 12 6.627 12 0Z"
+            fill="rgba(139, 120, 168, 0.3)" />
         </svg>
       </div>
 
@@ -49,7 +63,7 @@
     <!-- Product Grid Section -->
     <section class="grid-section">
       <div class="collections-container">
-        
+
         <!-- Procedural grid loader -->
         <div id="collections-grid" class="collections-grid">
           <!-- Dynamically loaded product cards will be appended here -->
@@ -59,9 +73,9 @@
         <div id="empty-state" class="empty-state">
           <div class="empty-icon-wrapper">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-              <circle cx="9" cy="9" r="2"/>
-              <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+              <circle cx="9" cy="9" r="2" />
+              <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
             </svg>
           </div>
           <h3 class="empty-title">No Case Designs Found</h3>
@@ -79,24 +93,12 @@
 
   </main>
 
-  <!-- Footer -->
-  <footer class="collections-footer">
-    <div class="footer-container">
-      <div class="footer-brand">
-        <h2 class="footer-logo">Cloäk & Co.</h2>
-        <p class="footer-tagline">Protect What Matters.</p>
-      </div>
-      <div class="footer-links">
-        <a href="index.html#home" class="footer-link">Home</a>
-        <a href="collections.html" class="footer-link active">Collections</a>
-        <a href="about.html" class="footer-link">About</a>
-        <a href="contact.html" class="footer-link">Contact</a>
-      </div>
-    </div>
-  </footer>
+  <div id="footer"></div>
 
   <!-- Collections scripting -->
   <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
   <script src="js/collections.js"></script>
 </body>
+
 </html>
